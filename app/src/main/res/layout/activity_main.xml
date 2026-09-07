@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="24dp" android:background="#07090F"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="NOVA" android:textColor="#FFFFFF" android:textSize="32sp"
+        android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/status" android:text="Disconnected" android:textColor="#AAAAAA"
+        android:textSize="16sp" android:layout_marginTop="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/serverUrl" android:hint="Tailscale Nova URL"
+        android:textColor="#FFFFFF" android:hintTextColor="#777777" android:inputType="textUri"
+        android:layout_marginTop="24dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <EditText android:id="@+id/deviceToken" android:hint="Device token"
+        android:textColor="#FFFFFF" android:hintTextColor="#777777" android:inputType="text"
+        android:layout_marginTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/connect" android:text="CONNECT TO NOVA"
+        android:layout_marginTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:text="Phone controls" android:textColor="#FFFFFF" android:textSize="20sp"
+        android:textStyle="bold" android:layout_marginTop="28dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/camera" android:text="OPEN CAMERA" android:layout_marginTop="10dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/youtube" android:text="OPEN YOUTUBE" android:layout_marginTop="8dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <Button android:id="@+id/files" android:text="PICK PHONE FILE" android:layout_marginTop="8dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/log" android:text="Ready." android:textColor="#AAAAAA"
+        android:layout_marginTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>
